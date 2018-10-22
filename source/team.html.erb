@@ -1,0 +1,16 @@
+<div id="team">
+  <div id="team-content">
+    <h2>This page was made by:</h2>
+
+    <ul class="list-inline text-center">
+      <% counter = 1 %>
+      <% ["Buddy 1", "Buddy 2"].each do |gh_username| %>
+        <li>
+          <%= image_tag "https://kitt.lewagon.com/placeholder/users/pappilard?#{counter}", class: "img-circle" %>
+          <% counter += 1 %>
+          <h3><%= gh_username.capitalize %></h3>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
